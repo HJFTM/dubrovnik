@@ -45,8 +45,8 @@ import "../../_observablehq/client.8d1cd726.js";
   <section>
     <summary>Mjesta</summary>
     <ol>
-    <li class="observablehq-link"><a href="./mjesto/Grad%2520Dubrovnik">1650. Grad Dubrovnik</a></li>
-    <li class="observablehq-link"><a href="./mjesto/Pile">1718. Pile</a></li>
+    <li class="observablehq-link"><a href="../ENTITET/mjesto/Grad%2520Dubrovnik">1650. Grad Dubrovnik</a></li>
+    <li class="observablehq-link"><a href="../ENTITET/mjesto/Pile">1718. Pile</a></li>
     </ol>
   </section>
   <section>
@@ -73,12 +73,14 @@ import "../../_observablehq/client.8d1cd726.js";
 </nav>
 </aside>
 <main id="observablehq-main" class="observablehq">
-<div id="observablehq-29142818"></div>
+<div id="observablehq-header-74475059"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/d0790d03c4a12a91.js?v=4";
-new Runtime().module(define, Inspector.into("#observablehq-29142818"));
+import define from "https://api.observablehq.com/d/479efd693ee10726.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "header") return new Inspector(document.querySelector("#observablehq-header-74475059"));
+});
 </script>
 </main>
 <footer id="observablehq-footer">
